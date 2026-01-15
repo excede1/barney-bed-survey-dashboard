@@ -500,6 +500,8 @@ export default function BarneyBedDashboard() {
     { id: 'geography', label: 'Geography' },
     { id: 'customers', label: 'Customers' },
     { id: 'strategy', label: 'Strategy' },
+    { id: 'ads-strategy', label: '💰 Ads Strategy' },
+    { id: 'organic-strategy', label: '🌱 Organic Strategy' },
     { id: 'comparison', label: 'Comparison' },
   ];
 
@@ -1593,6 +1595,1480 @@ export default function BarneyBedDashboard() {
                             <td className="px-4 py-3 text-sm">$385</td>
                             <td className="px-4 py-3 text-sm">$400</td>
                             <td className="px-4 py-3 text-sm">$420</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* BBUS Ads Strategy Tab */}
+            {activeTab === 'ads-strategy' && activeStore === 'BBUS' && (
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center">
+                      <span className="text-2xl">💰</span>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-gray-900">BBUS Paid Advertising Strategy</h2>
+                      <p className="text-gray-500">Data-driven paid media recommendations for the US market</p>
+                    </div>
+                  </div>
+
+                  {/* Priority Alert */}
+                  <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-6 border border-pink-200 mb-8">
+                    <h3 className="text-lg font-bold text-pink-800 mb-2">🎯 Top Priority: Instagram Dominates US Acquisition</h3>
+                    <p className="text-gray-700">Instagram drives <strong>35.4% of all US customer acquisition</strong> - 4.5x more effective than Facebook. Your paid strategy should be Instagram-first, with Google capturing high-intent search traffic.</p>
+                  </div>
+
+                  {/* Budget Allocation */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">💵 Recommended Budget Allocation</h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div className="bg-pink-100 rounded-xl p-4 text-center border-2 border-pink-300">
+                      <div className="text-3xl font-bold text-pink-700">45%</div>
+                      <div className="text-sm font-medium text-pink-600">Instagram Ads</div>
+                      <div className="text-xs text-gray-500 mt-1">Primary Channel</div>
+                    </div>
+                    <div className="bg-blue-100 rounded-xl p-4 text-center border-2 border-blue-300">
+                      <div className="text-3xl font-bold text-blue-700">30%</div>
+                      <div className="text-sm font-medium text-blue-600">Google Ads</div>
+                      <div className="text-xs text-gray-500 mt-1">High Intent</div>
+                    </div>
+                    <div className="bg-indigo-100 rounded-xl p-4 text-center border-2 border-indigo-300">
+                      <div className="text-3xl font-bold text-indigo-700">15%</div>
+                      <div className="text-sm font-medium text-indigo-600">Facebook Ads</div>
+                      <div className="text-xs text-gray-500 mt-1">Scale Testing</div>
+                    </div>
+                    <div className="bg-gray-900 rounded-xl p-4 text-center">
+                      <div className="text-3xl font-bold text-white">10%</div>
+                      <div className="text-sm font-medium text-gray-300">TikTok Ads</div>
+                      <div className="text-xs text-gray-400 mt-1">Growth Channel</div>
+                    </div>
+                  </div>
+
+                  {/* Priority 1: Instagram */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 1</span>
+                      <h3 className="text-xl font-bold text-gray-800">📸 Instagram Advertising (45% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 border border-pink-200">
+                      <p className="text-gray-700 mb-4"><strong>Why #1:</strong> Instagram is responsible for 35.4% of US customer acquisition (473 of 1,335 respondents who named a channel). This is your proven winner.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-pink-800 mb-3">🎯 Targeting Strategy</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Core Audience:</strong> Dog owners aged 25-54, household income $75K+, interested in pet care, home decor, premium products</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Lookalike Audiences:</strong> 1% lookalike of purchasers, 1% lookalike of email subscribers, 1% lookalike of high-AOV customers ($400+)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Interest Stacking:</strong> Dog breeds (Golden Retriever, Labrador, German Shepherd) + Home Design + Premium Pet Products</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Geographic Focus:</strong> California (20%), Texas (10%), Florida (7%), New York (6%) - your top 4 states</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-pink-800 mb-3">🎬 Ad Format Mix</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Reels (50% of spend):</strong> 15-30 second videos showing dogs enjoying beds, customer reactions, unboxing moments</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Stories (25% of spend):</strong> Swipe-up ads with urgency messaging, limited offers, new arrivals</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Feed Carousel (25% of spend):</strong> Product showcase, cover variety, before/after transformations</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 bg-white rounded-lg p-4 border border-pink-200">
+                        <h4 className="font-bold text-pink-800 mb-3">📝 Ad Copy Examples (Highest Priority)</h4>
+                        <div className="grid md:grid-cols-2 gap-4 text-sm">
+                          <div className="bg-pink-50 rounded-lg p-3">
+                            <p className="font-semibold text-pink-700 mb-1">Quality-Focused Ad:</p>
+                            <p className="text-gray-700 italic">"741 customers said QUALITY is why they chose us. Premium orthopedic support meets timeless design. Your dog deserves the bed 4.9-star reviewers rave about. 🐕"</p>
+                          </div>
+                          <div className="bg-pink-50 rounded-lg p-3">
+                            <p className="font-semibold text-pink-700 mb-1">Health-Focused Ad:</p>
+                            <p className="text-gray-700 italic">"698 pet parents chose us for orthopedic support. Whether your pup is 2 or 12, proper joint support matters. Vet-recommended memory foam that actually works."</p>
+                          </div>
+                          <div className="bg-pink-50 rounded-lg p-3">
+                            <p className="font-semibold text-pink-700 mb-1">Social Proof Ad:</p>
+                            <p className="text-gray-700 italic">"Over 1,500 5-star reviews can't be wrong. See why dog parents across America are making the switch to Barney Bed. [Customer UGC video]"</p>
+                          </div>
+                          <div className="bg-pink-50 rounded-lg p-3">
+                            <p className="font-semibold text-pink-700 mb-1">US-Made Pride Ad:</p>
+                            <p className="text-gray-700 italic">"Designed & made with love in the USA 🇺🇸 Supporting American craftsmanship, one happy pup at a time. Free shipping nationwide."</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 bg-amber-50 rounded-lg p-4 border border-amber-200">
+                        <h4 className="font-bold text-amber-800 mb-2">⚠️ Retargeting Strategy (Critical)</h4>
+                        <p className="text-sm text-gray-700 mb-2">Data shows 16% of Instagram-discovered customers take 3+ months to purchase. Build these retargeting windows:</p>
+                        <ul className="text-sm space-y-1">
+                          <li><strong>Days 1-7:</strong> Product showcase, reviews, quality messaging</li>
+                          <li><strong>Days 8-30:</strong> Customer testimonials, UGC, "still thinking about it?" messaging</li>
+                          <li><strong>Days 31-90:</strong> Special offers, cover variety, free shipping reminders</li>
+                          <li><strong>Days 91+:</strong> Seasonal campaigns, "we miss you" re-engagement</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Priority 2: Google */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 2</span>
+                      <h3 className="text-xl font-bold text-gray-800">🔍 Google Advertising (30% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200">
+                      <p className="text-gray-700 mb-4"><strong>Why #2:</strong> Google drives 23.1% of acquisition with the fastest conversion rate - 66% of Google-discovered customers purchase within 1 week. This is your high-intent, ready-to-buy traffic.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-blue-800 mb-3">🎯 Campaign Structure</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Brand Search (40%):</strong> "Barney Bed", "Barney dog bed", "Barney Bed reviews" - defend your brand terms</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Non-Brand Search (35%):</strong> "orthopedic dog bed", "luxury dog bed", "best dog bed for large dogs", "memory foam dog bed"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Shopping Campaigns (20%):</strong> Product feed optimization with high-quality images, competitive pricing</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Performance Max (5%):</strong> Test automation with strong creative assets</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-blue-800 mb-3">🔑 High-Priority Keywords</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Highest Intent:</strong> "buy orthopedic dog bed", "best dog bed 2025", "premium dog bed free shipping"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Problem-Aware:</strong> "dog bed for hip dysplasia", "dog bed for arthritis", "dog bed for senior dogs"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Breed-Specific:</strong> "golden retriever dog bed", "large breed dog bed", "XL dog bed"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Comparison:</strong> "Barney Bed vs Big Barker", "best orthopedic dog bed comparison"</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 bg-white rounded-lg p-4 border border-blue-200">
+                        <h4 className="font-bold text-blue-800 mb-3">📝 Search Ad Copy Examples</h4>
+                        <div className="space-y-3 text-sm">
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="font-semibold text-blue-700">Headline 1:</p>
+                            <p className="text-gray-700">"Orthopedic Dog Beds | Vet-Recommended Support | Free US Shipping"</p>
+                            <p className="font-semibold text-blue-700 mt-2">Description:</p>
+                            <p className="text-gray-700 italic">"4.9★ rated by 1,500+ dog parents. Premium memory foam orthopedic beds designed in the USA. Washable covers in 20+ styles. Ships free in 2-5 days."</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="font-semibold text-blue-700">Headline 2 (Health Focus):</p>
+                            <p className="text-gray-700">"Dog Beds for Joint Pain | Orthopedic Memory Foam | Made in USA"</p>
+                            <p className="font-semibold text-blue-700 mt-2">Description:</p>
+                            <p className="text-gray-700 italic">"Relieve your dog's joint pain with vet-approved orthopedic support. 698 customers chose us for orthopedic benefits. 30-day comfort guarantee."</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 bg-green-50 rounded-lg p-4 border border-green-200">
+                        <h4 className="font-bold text-green-800 mb-2">📊 Bidding Strategy</h4>
+                        <p className="text-sm text-gray-700">With 66% of Google traffic converting within 1 week, use <strong>Maximize Conversions</strong> or <strong>Target ROAS</strong> bidding. Set Target ROAS at 400-500% initially, adjust based on actual performance. Google shoppers are ready to buy - capture them aggressively.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Priority 3: Facebook */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-indigo-600 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 3</span>
+                      <h3 className="text-xl font-bold text-gray-800">👥 Facebook Advertising (15% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-6 border border-indigo-200">
+                      <p className="text-gray-700 mb-4"><strong>Why test scaling:</strong> Facebook is currently only 7.8% of US acquisition, but in Australia it's 16% (2x more effective). This suggests untapped potential. Test increasing spend to close the gap.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-indigo-800 mb-3">🧪 Test Strategy</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Audience Test 1:</strong> Dog owner Facebook Groups (retarget group members who've engaged)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Audience Test 2:</strong> Parents 35-55 with dogs (higher AOV demographic)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Audience Test 3:</strong> Pet industry page followers (competitors, pet stores)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Creative Test:</strong> Video testimonials vs. static product shots vs. carousel</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-indigo-800 mb-3">📊 Success Metrics</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Target CPA:</strong> Within 20% of Instagram CPA</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Target ROAS:</strong> 300%+ (lower bar for testing)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Goal:</strong> Grow Facebook from 7.8% → 12% of acquisition</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-indigo-500">•</span>
+                              <span><strong>Timeline:</strong> 8-week test with $5K budget minimum</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Priority 4: TikTok */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-gray-800 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 4</span>
+                      <h3 className="text-xl font-bold text-gray-800">🎵 TikTok Advertising (10% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-6 text-white">
+                      <p className="text-gray-300 mb-4"><strong>Why invest:</strong> TikTok is only 3.8% of acquisition currently, but TikTok customers have an average AOV of $400 - the highest of any channel. This is a growth opportunity with premium customers.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-white mb-3">🎬 Content That Works</h4>
+                          <ul className="space-y-2 text-sm text-gray-300">
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>"Dog reaction" videos:</strong> First time seeing their new bed, instant flop, zoomies after</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>Unboxing content:</strong> Full unboxing experience, setup, dog's first nap</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>"Day in the life":</strong> Pet parent routines featuring the bed</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>Before/after:</strong> Old bed vs. new Barney Bed transformations</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-white mb-3">🤝 Influencer Strategy</h4>
+                          <ul className="space-y-2 text-sm text-gray-300">
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>Micro-influencers (10K-100K):</strong> 5-10 pet TikTokers per quarter</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>Content style:</strong> Native, authentic, not overly produced</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>Compensation:</strong> Free product + affiliate commission (10-15%)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-400">•</span>
+                              <span><strong>Goal:</strong> Grow from 3.8% → 8% of acquisition within 12 months</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 bg-gray-700 rounded-lg p-4">
+                        <h4 className="font-bold text-white mb-2">🎯 TikTok Ad Spark Strategy</h4>
+                        <p className="text-sm text-gray-300">Use Spark Ads to boost organic UGC and influencer content. This performs 2-3x better than traditional ads on TikTok. Budget 70% of TikTok spend on Spark Ads boosting top-performing organic content.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Geographic Targeting */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">🗺️ Geographic Ad Targeting</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="bg-green-50 rounded-xl p-5 border border-green-200">
+                        <h4 className="font-bold text-green-800 mb-3">🛡️ Defend: Top Markets (60% of geo budget)</h4>
+                        <ul className="space-y-2 text-sm">
+                          <li><strong>California (20%):</strong> Los Angeles, San Francisco, San Diego metros</li>
+                          <li><strong>Texas (10%):</strong> Dallas-Fort Worth, Houston, Austin</li>
+                          <li><strong>Florida (7%):</strong> Miami, Tampa, Orlando</li>
+                          <li><strong>New York (6%):</strong> NYC metro, Long Island, Westchester</li>
+                        </ul>
+                        <p className="mt-3 text-xs text-gray-600">These 4 states = 43% of orders. Maintain strong presence with proven messaging.</p>
+                      </div>
+                      <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
+                        <h4 className="font-bold text-blue-800 mb-3">⚔️ Attack: Growth Markets (40% of geo budget)</h4>
+                        <ul className="space-y-2 text-sm">
+                          <li><strong>Colorado:</strong> Active outdoor dog culture, premium market</li>
+                          <li><strong>Washington:</strong> Seattle metro, tech-savvy, high income</li>
+                          <li><strong>Arizona:</strong> Phoenix, Scottsdale - growing market</li>
+                          <li><strong>Georgia:</strong> Atlanta metro - underrepresented opportunity</li>
+                        </ul>
+                        <p className="mt-3 text-xs text-gray-600">Test increased spend in these markets with outdoor/active lifestyle messaging.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* KPIs */}
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">📊 Paid Ads KPIs to Track</h3>
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full">
+                        <thead>
+                          <tr className="border-b border-gray-300">
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Metric</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Instagram</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Google</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Facebook</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">TikTok</th>
+                          </tr>
+                        </thead>
+                        <tbody className="text-sm">
+                          <tr className="border-b">
+                            <td className="px-4 py-2 font-medium">Target ROAS</td>
+                            <td className="px-4 py-2">400%+</td>
+                            <td className="px-4 py-2">500%+</td>
+                            <td className="px-4 py-2">300%+</td>
+                            <td className="px-4 py-2">250%+</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-4 py-2 font-medium">Target CPA</td>
+                            <td className="px-4 py-2">$60-80</td>
+                            <td className="px-4 py-2">$50-70</td>
+                            <td className="px-4 py-2">$70-90</td>
+                            <td className="px-4 py-2">$80-100</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-4 py-2 font-medium">CTR Target</td>
+                            <td className="px-4 py-2">1.5%+</td>
+                            <td className="px-4 py-2">3%+</td>
+                            <td className="px-4 py-2">1%+</td>
+                            <td className="px-4 py-2">1%+</td>
+                          </tr>
+                          <tr>
+                            <td className="px-4 py-2 font-medium">Acquisition % Goal</td>
+                            <td className="px-4 py-2">35% → 40%</td>
+                            <td className="px-4 py-2">23% → 25%</td>
+                            <td className="px-4 py-2">8% → 12%</td>
+                            <td className="px-4 py-2">4% → 8%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* BBAU Ads Strategy Tab */}
+            {activeTab === 'ads-strategy' && activeStore === 'BBAU' && (
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center">
+                      <span className="text-2xl">💰</span>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-gray-900">BBAU Paid Advertising Strategy</h2>
+                      <p className="text-gray-500">Data-driven paid media recommendations for the Australian market</p>
+                    </div>
+                  </div>
+
+                  {/* Priority Alert */}
+                  <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-xl p-6 border border-green-200 mb-8">
+                    <h3 className="text-lg font-bold text-green-800 mb-2">🎯 Top Priority: Facebook is 2x More Effective in Australia</h3>
+                    <p className="text-gray-700">Unlike the US where Instagram dominates, <strong>Facebook drives 16% of Australian acquisition</strong> (2x the US rate of 8%). Your AU paid strategy should give equal weight to Facebook and Instagram, with heavy emphasis on retargeting for longer consideration cycles.</p>
+                  </div>
+
+                  {/* Budget Allocation */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">💵 Recommended Budget Allocation</h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div className="bg-blue-100 rounded-xl p-4 text-center border-2 border-blue-300">
+                      <div className="text-3xl font-bold text-blue-700">35%</div>
+                      <div className="text-sm font-medium text-blue-600">Facebook Ads</div>
+                      <div className="text-xs text-gray-500 mt-1">Scale Winner</div>
+                    </div>
+                    <div className="bg-pink-100 rounded-xl p-4 text-center border-2 border-pink-300">
+                      <div className="text-3xl font-bold text-pink-700">30%</div>
+                      <div className="text-sm font-medium text-pink-600">Instagram Ads</div>
+                      <div className="text-xs text-gray-500 mt-1">Community Focus</div>
+                    </div>
+                    <div className="bg-cyan-100 rounded-xl p-4 text-center border-2 border-cyan-300">
+                      <div className="text-3xl font-bold text-cyan-700">25%</div>
+                      <div className="text-sm font-medium text-cyan-600">Google Ads</div>
+                      <div className="text-xs text-gray-500 mt-1">Brand Defense</div>
+                    </div>
+                    <div className="bg-amber-100 rounded-xl p-4 text-center border-2 border-amber-300">
+                      <div className="text-3xl font-bold text-amber-700">10%</div>
+                      <div className="text-sm font-medium text-amber-600">Retargeting</div>
+                      <div className="text-xs text-gray-500 mt-1">Long Nurture</div>
+                    </div>
+                  </div>
+
+                  {/* Priority 1: Facebook */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 1</span>
+                      <h3 className="text-xl font-bold text-gray-800">👥 Facebook Advertising (35% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+                      <p className="text-gray-700 mb-4"><strong>Why #1 in AU:</strong> Facebook drives 16% of Australian acquisition vs only 8% in the US. This 2x effectiveness makes Facebook your top paid channel for Australia. Scale aggressively.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-blue-800 mb-3">🎯 Targeting Strategy</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Core Demo:</strong> Dog owners 30-60, interested in pets, home, family - Facebook skews older than Instagram</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Interest Groups:</strong> Australian dog owner Facebook Groups, pet community pages, local dog parks</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Lookalikes:</strong> 1-2% lookalike of AU purchasers, 2% lookalike of repeat customers (49% of your base!)</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Geographic:</strong> NSW (33%), VIC (24%), QLD (19%) - your top 3 states = 76% of orders</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-blue-800 mb-3">🎬 Ad Format Mix</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Video Testimonials (40%):</strong> Real Australian customers sharing their experience - community resonates</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Carousel (30%):</strong> Product showcase, cover variety, lifestyle shots in Australian homes</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Collection Ads (20%):</strong> Shop directly from Facebook with product catalog</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-blue-500">•</span>
+                              <span><strong>Stories (10%):</strong> Behind-the-scenes, Australian team content</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 bg-white rounded-lg p-4 border border-blue-200">
+                        <h4 className="font-bold text-blue-800 mb-3">📝 Ad Copy Examples (Australian Market)</h4>
+                        <div className="grid md:grid-cols-2 gap-4 text-sm">
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="font-semibold text-blue-700 mb-1">Aussie Pride Ad:</p>
+                            <p className="text-gray-700 italic">"Proudly Australian-made 🇦🇺 Join 2,190+ Aussie pet parents who've chosen quality over cheap imports. Supporting local business never looked this comfy."</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="font-semibold text-blue-700 mb-1">Community Proof Ad:</p>
+                            <p className="text-gray-700 italic">"24% of our customers heard about us from a friend. When nearly 1 in 4 come from word of mouth, you know we're doing something right. See what the fuss is about."</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="font-semibold text-blue-700 mb-1">Quality-First Ad:</p>
+                            <p className="text-gray-700 italic">"1,104 Australian customers said QUALITY is why they chose Barney Bed. Premium orthopedic support, washable covers, made to last. Your best mate deserves the best."</p>
+                          </div>
+                          <div className="bg-blue-50 rounded-lg p-3">
+                            <p className="font-semibold text-blue-700 mb-1">Health Focus Ad:</p>
+                            <p className="text-gray-700 italic">"786 Aussie pet parents chose us for orthopedic support. Whether your pup's a sprightly young thing or a distinguished senior, proper joint care matters."</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Priority 2: Instagram */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 2</span>
+                      <h3 className="text-xl font-bold text-gray-800">📸 Instagram Advertising (30% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-xl p-6 border border-pink-200">
+                      <p className="text-gray-700 mb-4"><strong>Why #2:</strong> Instagram still leads at 26.4% but is less dominant than in the US (35%). Focus on community-building and long-term brand awareness rather than direct response - AU customers need more touchpoints.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-pink-800 mb-3">🎯 AU-Specific Strategy</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Awareness Focus:</strong> 50% take 3+ months to buy - focus on brand building, not hard sells</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>UGC-Heavy Creative:</strong> Real Australian customers, their dogs, their homes</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Email Capture Goal:</strong> Drive to email signup for long nurture sequences</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Community Messaging:</strong> "Join the Barney Bed family" - lean into the strong WOM culture</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-pink-800 mb-3">⏰ Retargeting Windows (Critical)</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Days 1-14:</strong> Product education, reviews, quality messaging</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Days 15-60:</strong> Customer stories, UGC, community proof</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Days 61-180:</strong> Gentle reminders, seasonal offers, new covers</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-pink-500">•</span>
+                              <span><strong>Days 181-365:</strong> Re-engagement, "still looking?", special offers</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="mt-4 bg-amber-50 rounded-lg p-4 border border-amber-200">
+                        <h4 className="font-bold text-amber-800 mb-2">⚠️ Critical Insight: 30% Take Over 12 Months</h4>
+                        <p className="text-sm text-gray-700">Unlike the US (15.5%), <strong>30% of Australian customers wait over a year</strong> before purchasing. Your retargeting must extend to 365 days. Don't give up at 30 or 60 days like you might in other markets.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Priority 3: Google */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-cyan-600 text-white px-3 py-1 rounded-full text-sm font-bold">PRIORITY 3</span>
+                      <h3 className="text-xl font-bold text-gray-800">🔍 Google Advertising (25% of budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-6 border border-cyan-200">
+                      <p className="text-gray-700 mb-4"><strong>Role in AU:</strong> Google drives 18.2% of acquisition but with slower conversion than the US. Focus on brand defense and orthopedic health terms that align with your top purchase motivations.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-bold text-cyan-800 mb-3">🔑 Priority Keywords (AU)</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Brand Terms:</strong> "Barney Bed Australia", "Barney Bed", "Barney dog bed AU"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Health Intent:</strong> "orthopedic dog bed Australia", "dog bed arthritis", "memory foam dog bed AU"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Local Intent:</strong> "Australian made dog bed", "dog bed Sydney", "dog bed Melbourne"</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Breed Specific:</strong> "kelpie dog bed", "staffy dog bed", "labrador bed Australia"</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-cyan-800 mb-3">📊 Campaign Structure</h4>
+                          <ul className="space-y-2 text-sm">
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Brand (50%):</strong> Defend brand terms, competitor conquesting</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Non-Brand (30%):</strong> Orthopedic/health terms where you have authority</span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-cyan-500">•</span>
+                              <span><strong>Shopping (20%):</strong> Product feed with AU pricing, free shipping messaging</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Long Nurture Retargeting */}
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-bold">CRITICAL</span>
+                      <h3 className="text-xl font-bold text-gray-800">⏰ Long-Cycle Retargeting Strategy (10% dedicated budget)</h3>
+                    </div>
+                    <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200">
+                      <p className="text-gray-700 mb-4"><strong>This is unique to AU:</strong> With 50% taking 3+ months and 30% taking over a year, you need a dedicated retargeting budget that extends far beyond typical windows.</p>
+
+                      <div className="overflow-x-auto">
+                        <table className="min-w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-amber-300">
+                              <th className="px-4 py-2 text-left font-bold text-amber-800">Window</th>
+                              <th className="px-4 py-2 text-left font-bold text-amber-800">% of Budget</th>
+                              <th className="px-4 py-2 text-left font-bold text-amber-800">Message Focus</th>
+                              <th className="px-4 py-2 text-left font-bold text-amber-800">Creative Type</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="border-b">
+                              <td className="px-4 py-2 font-medium">Days 1-30</td>
+                              <td className="px-4 py-2">25%</td>
+                              <td className="px-4 py-2">Product education, quality, reviews</td>
+                              <td className="px-4 py-2">Product videos, carousel</td>
+                            </tr>
+                            <tr className="border-b bg-amber-50">
+                              <td className="px-4 py-2 font-medium">Days 31-90</td>
+                              <td className="px-4 py-2">25%</td>
+                              <td className="px-4 py-2">Customer stories, community, UGC</td>
+                              <td className="px-4 py-2">Testimonial videos</td>
+                            </tr>
+                            <tr className="border-b">
+                              <td className="px-4 py-2 font-medium">Days 91-180</td>
+                              <td className="px-4 py-2">20%</td>
+                              <td className="px-4 py-2">New covers, seasonal, gentle reminders</td>
+                              <td className="px-4 py-2">Carousel, Stories</td>
+                            </tr>
+                            <tr className="border-b bg-amber-50">
+                              <td className="px-4 py-2 font-medium">Days 181-365</td>
+                              <td className="px-4 py-2">20%</td>
+                              <td className="px-4 py-2">"Still looking?", special offers</td>
+                              <td className="px-4 py-2">DPA, video</td>
+                            </tr>
+                            <tr>
+                              <td className="px-4 py-2 font-medium">Days 365+</td>
+                              <td className="px-4 py-2">10%</td>
+                              <td className="px-4 py-2">Re-engagement, major sales</td>
+                              <td className="px-4 py-2">High-value offers</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Geographic Targeting */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">🗺️ Geographic Ad Targeting</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="bg-green-50 rounded-xl p-5 border border-green-200">
+                        <h4 className="font-bold text-green-800 mb-3">🛡️ Core Markets (70% of geo budget)</h4>
+                        <ul className="space-y-2 text-sm">
+                          <li><strong>New South Wales (33%):</strong> Sydney metro, Central Coast, Newcastle</li>
+                          <li><strong>Victoria (24%):</strong> Melbourne metro, Geelong, Ballarat</li>
+                          <li><strong>Queensland (19%):</strong> Brisbane, Gold Coast, Sunshine Coast</li>
+                        </ul>
+                        <p className="mt-3 text-xs text-gray-600">These 3 states = 76% of orders. Heavy investment with proven messaging.</p>
+                      </div>
+                      <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
+                        <h4 className="font-bold text-blue-800 mb-3">⚔️ Growth Markets (30% of geo budget)</h4>
+                        <ul className="space-y-2 text-sm">
+                          <li><strong>Western Australia (9.5%):</strong> Perth metro - premium market opportunity</li>
+                          <li><strong>South Australia (5.8%):</strong> Adelaide - underserved market</li>
+                          <li><strong>ACT (2%):</strong> Canberra - high income, government workers</li>
+                          <li><strong>New Zealand:</strong> Auckland, Canterbury - test expansion (1.5% already)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* KPIs */}
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">📊 Paid Ads KPIs for Australia</h3>
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full">
+                        <thead>
+                          <tr className="border-b border-gray-300">
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Metric</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Facebook</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Instagram</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Google</th>
+                            <th className="px-4 py-2 text-left text-sm font-bold text-gray-700">Retargeting</th>
+                          </tr>
+                        </thead>
+                        <tbody className="text-sm">
+                          <tr className="border-b">
+                            <td className="px-4 py-2 font-medium">Target ROAS</td>
+                            <td className="px-4 py-2">450%+</td>
+                            <td className="px-4 py-2">400%+</td>
+                            <td className="px-4 py-2">400%+</td>
+                            <td className="px-4 py-2">600%+</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-4 py-2 font-medium">Target CPA (AUD)</td>
+                            <td className="px-4 py-2">$70-90</td>
+                            <td className="px-4 py-2">$75-95</td>
+                            <td className="px-4 py-2">$65-85</td>
+                            <td className="px-4 py-2">$50-70</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-4 py-2 font-medium">Attribution Window</td>
+                            <td className="px-4 py-2">28-day</td>
+                            <td className="px-4 py-2">28-day</td>
+                            <td className="px-4 py-2">30-day</td>
+                            <td className="px-4 py-2">90-day</td>
+                          </tr>
+                          <tr>
+                            <td className="px-4 py-2 font-medium">Acquisition % Goal</td>
+                            <td className="px-4 py-2">16% → 22%</td>
+                            <td className="px-4 py-2">26% → 28%</td>
+                            <td className="px-4 py-2">18% → 18%</td>
+                            <td className="px-4 py-2">-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* BBUS Organic Strategy Tab */}
+            {activeTab === 'organic-strategy' && activeStore === 'BBUS' && (
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center">
+                      <span className="text-2xl">🌱</span>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-gray-900">BBUS Organic & Content Strategy</h2>
+                      <p className="text-gray-500">Building brand equity and word-of-mouth in the US market</p>
+                    </div>
+                  </div>
+
+                  {/* Priority Alert */}
+                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-6 border border-green-200 mb-8">
+                    <h3 className="text-lg font-bold text-green-800 mb-2">🎯 Top Priority: Close the Word-of-Mouth Gap</h3>
+                    <p className="text-gray-700">US word-of-mouth is only <strong>10.1%</strong> compared to Australia's <strong>23.8%</strong> (2.4x lower). Your organic strategy should focus on building the community advocacy that drives referrals. A referral program + UGC strategy can close this gap.</p>
+                  </div>
+
+                  {/* Content Pillars */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">📚 Content Pillars (Priority Order)</h3>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-5 border-2 border-blue-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold">#1</span>
+                        <h4 className="font-bold text-blue-800">🏆 Quality & Craftsmanship</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">741 US customers cited "Quality of Products" as their #1 purchase motivation. Lead with quality in all content.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Behind-the-scenes manufacturing videos</li>
+                        <li>• Material deep-dives (memory foam, fabrics)</li>
+                        <li>• Durability tests and comparisons</li>
+                        <li>• "Why we chose these materials" content</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-5 border-2 border-green-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-green-600 text-white px-2 py-1 rounded text-xs font-bold">#2</span>
+                        <h4 className="font-bold text-green-800">🐕 Dog Health & Comfort</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">698 customers chose you for orthopedic support. Position as the health-conscious choice.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Vet-endorsed content on joint health</li>
+                        <li>• Senior dog care educational posts</li>
+                        <li>• Before/after stories (improved mobility)</li>
+                        <li>• Breed-specific health tips</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-5 border-2 border-purple-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-purple-600 text-white px-2 py-1 rounded text-xs font-bold">#3</span>
+                        <h4 className="font-bold text-purple-800">⭐ Customer Stories & UGC</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">527 customers mentioned "Ratings & Reputation" - social proof converts. Feature your community heavily.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Weekly customer spotlight features</li>
+                        <li>• UGC repost strategy (with permission)</li>
+                        <li>• Review highlights and compilations</li>
+                        <li>• "Day in the life" customer stories</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-5 border-2 border-amber-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-amber-600 text-white px-2 py-1 rounded text-xs font-bold">#4</span>
+                        <h4 className="font-bold text-amber-800">🇺🇸 American-Made Pride</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">184 customers valued "Supporting US Business" - this resonates with your audience.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Team member introductions</li>
+                        <li>• US manufacturing stories</li>
+                        <li>• Local community involvement</li>
+                        <li>• "Made in America" feature content</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Platform-Specific Strategy */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">📱 Platform-Specific Content Strategy</h3>
+
+                  {/* Instagram */}
+                  <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-6 border border-pink-200 mb-6">
+                    <h4 className="font-bold text-pink-800 text-lg mb-4">📸 Instagram (Primary Platform - 35% of acquisition)</h4>
+                    <div className="grid md:grid-cols-3 gap-6">
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Posting Cadence</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• <strong>Feed Posts:</strong> 5-7x per week</li>
+                          <li>• <strong>Stories:</strong> Daily (8-12 per day)</li>
+                          <li>• <strong>Reels:</strong> 4-5x per week</li>
+                          <li>• <strong>Lives:</strong> 1-2x per month</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Content Mix</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• 40% Customer UGC/testimonials</li>
+                          <li>• 25% Product features/beauty shots</li>
+                          <li>• 20% Educational (health/care)</li>
+                          <li>• 15% Behind-the-scenes/team</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Engagement Tactics</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Reply to all comments within 2 hours</li>
+                          <li>• DM every customer who tags you</li>
+                          <li>• Use polls/questions in Stories</li>
+                          <li>• Create shareable infographics</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="mt-4 bg-white rounded-lg p-4 border border-pink-200">
+                      <h5 className="font-semibold text-pink-700 mb-2">📝 Post Examples</h5>
+                      <div className="grid md:grid-cols-2 gap-3 text-sm">
+                        <div className="bg-pink-50 rounded p-2">
+                          <p className="font-medium text-pink-700">UGC Repost:</p>
+                          <p className="text-gray-600 italic">"Nothing makes us happier than seeing this 🥹 @customername's pup Tucker found his new favorite spot. Thanks for sharing! #BarneyBedFamily"</p>
+                        </div>
+                        <div className="bg-pink-50 rounded p-2">
+                          <p className="font-medium text-pink-700">Educational Reel:</p>
+                          <p className="text-gray-600 italic">"3 signs your dog needs orthopedic support: [video showing mobility issues, restless sleep, difficulty getting up] Your pup might be telling you something 🐕"</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* TikTok */}
+                  <div className="bg-gray-900 rounded-xl p-6 mb-6">
+                    <h4 className="font-bold text-white text-lg mb-4">🎵 TikTok (Growth Channel - 3.8% → 8% target)</h4>
+                    <div className="grid md:grid-cols-3 gap-6 text-gray-300">
+                      <div>
+                        <h5 className="font-semibold text-white mb-2">Posting Cadence</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• <strong>Posts:</strong> 3-5x per week minimum</li>
+                          <li>• <strong>Best Times:</strong> 7-9am, 12-3pm, 7-9pm EST</li>
+                          <li>• <strong>Trend Response:</strong> Within 24 hours</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-white mb-2">Content That Works</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Dog reaction videos (first flop)</li>
+                          <li>• Unboxing content</li>
+                          <li>• Before/after transformations</li>
+                          <li>• "POV: Your dog gets a Barney Bed"</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-white mb-2">Growth Tactics</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Partner with 5-10 pet micro-influencers</li>
+                          <li>• Use trending sounds immediately</li>
+                          <li>• Duet/stitch customer content</li>
+                          <li>• Create branded hashtag challenge</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Referral Program */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">🎁 Referral Program Strategy (Priority Initiative)</h3>
+                    <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-xl p-6 border-2 border-amber-300">
+                      <p className="text-gray-700 mb-4"><strong>The Opportunity:</strong> US word-of-mouth is 10% vs Australia's 24%. A formal referral program could add <strong>5-10 percentage points</strong> to acquisition and significantly reduce CAC.</p>
+
+                      <div className="grid md:grid-cols-3 gap-6">
+                        <div>
+                          <h5 className="font-bold text-amber-800 mb-2">💰 Recommended Structure</h5>
+                          <ul className="text-sm space-y-1">
+                            <li>• <strong>Give $25, Get $25</strong> (or 15% off)</li>
+                            <li>• Double rewards for repeat customers</li>
+                            <li>• VIP tier for 3+ referrals (exclusive access)</li>
+                            <li>• Free cover for 5+ referrals</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h5 className="font-bold text-amber-800 mb-2">🚀 Launch Strategy</h5>
+                          <ul className="text-sm space-y-1">
+                            <li>• Email existing customers announcement</li>
+                            <li>• Post-purchase flow integration</li>
+                            <li>• Include referral card in every shipment</li>
+                            <li>• Social media campaign launch</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h5 className="font-bold text-amber-800 mb-2">📊 Target Metrics</h5>
+                          <ul className="text-sm space-y-1">
+                            <li>• WOM: 10% → 15% (6 months)</li>
+                            <li>• 20% of customers share link</li>
+                            <li>• 5% referral conversion rate</li>
+                            <li>• CAC reduction: 15-20%</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Email & SMS */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">📧 Email & SMS Strategy</h3>
+                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+                      <p className="text-gray-700 mb-4">Email triggered 6.8% of site visits (the "what brought you today" question). For the 16% who take 3+ months, email nurture is essential.</p>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h5 className="font-bold text-blue-800 mb-2">📬 Email Flows</h5>
+                          <ul className="text-sm space-y-2">
+                            <li><strong>Welcome Series (5 emails):</strong> Brand story → Quality focus → Health benefits → Reviews → First offer</li>
+                            <li><strong>Browse Abandon (3 emails):</strong> Reminder → Reviews → Urgency/offer</li>
+                            <li><strong>Cart Abandon (4 emails):</strong> Reminder → Reviews → FAQ → Final offer</li>
+                            <li><strong>Post-Purchase (4 emails):</strong> Thank you → Care tips → Review request → Referral ask</li>
+                            <li><strong>Win-Back (3 emails):</strong> Miss you → New products → Special offer</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h5 className="font-bold text-blue-800 mb-2">📱 SMS Strategy</h5>
+                          <ul className="text-sm space-y-2">
+                            <li><strong>Welcome:</strong> "Welcome to the Barney Bed family! 🐕 Your pup's new favorite spot awaits."</li>
+                            <li><strong>Cart Abandon:</strong> "Still thinking? [Dog name]'s Barney Bed is waiting! Complete your order: [link]"</li>
+                            <li><strong>Shipping:</strong> Real-time tracking updates</li>
+                            <li><strong>Review Request:</strong> "How's [Dog name] enjoying their new bed? We'd love to hear! [review link]"</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Community Building */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">👥 Community Building Initiatives</h3>
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-purple-50 rounded-xl p-4 border border-purple-200">
+                        <h5 className="font-bold text-purple-800 mb-2">🏆 Customer Features</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Weekly "Pup of the Week" features</li>
+                          <li>• Monthly customer spotlight emails</li>
+                          <li>• Annual "Best Photos" contest</li>
+                          <li>• Customer anniversary celebrations</li>
+                        </ul>
+                      </div>
+                      <div className="bg-green-50 rounded-xl p-4 border border-green-200">
+                        <h5 className="font-bold text-green-800 mb-2">🤝 Partnerships</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Local rescue/shelter partnerships</li>
+                          <li>• Vet clinic referral program</li>
+                          <li>• Pet photographer collaborations</li>
+                          <li>• Dog trainer partnerships</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
+                        <h5 className="font-bold text-blue-800 mb-2">📍 Local Events</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Dog park pop-ups (CA, TX, FL)</li>
+                          <li>• Pet expo presence</li>
+                          <li>• Shelter adoption day sponsorships</li>
+                          <li>• "Barney Bed Meetups"</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content Calendar */}
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">📅 Weekly Content Calendar Template</h3>
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full text-sm">
+                        <thead>
+                          <tr className="border-b border-gray-300">
+                            <th className="px-3 py-2 text-left font-bold">Day</th>
+                            <th className="px-3 py-2 text-left font-bold">Instagram Feed</th>
+                            <th className="px-3 py-2 text-left font-bold">Instagram Stories</th>
+                            <th className="px-3 py-2 text-left font-bold">TikTok</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b">
+                            <td className="px-3 py-2 font-medium">Monday</td>
+                            <td className="px-3 py-2">Customer UGC feature</td>
+                            <td className="px-3 py-2">Week preview, polls</td>
+                            <td className="px-3 py-2">Dog reaction video</td>
+                          </tr>
+                          <tr className="border-b bg-gray-100">
+                            <td className="px-3 py-2 font-medium">Tuesday</td>
+                            <td className="px-3 py-2">Product feature</td>
+                            <td className="px-3 py-2">Behind-the-scenes</td>
+                            <td className="px-3 py-2">-</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-3 py-2 font-medium">Wednesday</td>
+                            <td className="px-3 py-2">Educational Reel</td>
+                            <td className="px-3 py-2">Q&A, reviews</td>
+                            <td className="px-3 py-2">Educational/tips</td>
+                          </tr>
+                          <tr className="border-b bg-gray-100">
+                            <td className="px-3 py-2 font-medium">Thursday</td>
+                            <td className="px-3 py-2">Customer testimonial</td>
+                            <td className="px-3 py-2">New arrivals, covers</td>
+                            <td className="px-3 py-2">Unboxing content</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-3 py-2 font-medium">Friday</td>
+                            <td className="px-3 py-2">Lifestyle shot</td>
+                            <td className="px-3 py-2">Weekend vibes, UGC</td>
+                            <td className="px-3 py-2">Trending sound</td>
+                          </tr>
+                          <tr className="border-b bg-gray-100">
+                            <td className="px-3 py-2 font-medium">Saturday</td>
+                            <td className="px-3 py-2">UGC carousel</td>
+                            <td className="px-3 py-2">Customer stories</td>
+                            <td className="px-3 py-2">-</td>
+                          </tr>
+                          <tr>
+                            <td className="px-3 py-2 font-medium">Sunday</td>
+                            <td className="px-3 py-2">Week recap Reel</td>
+                            <td className="px-3 py-2">Relaxation content</td>
+                            <td className="px-3 py-2">Cute/viral attempt</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* BBAU Organic Strategy Tab */}
+            {activeTab === 'organic-strategy' && activeStore === 'BBAU' && (
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-green-600 rounded-xl flex items-center justify-center">
+                      <span className="text-2xl">🌱</span>
+                    </div>
+                    <div>
+                      <h2 className="text-2xl font-bold text-gray-900">BBAU Organic & Content Strategy</h2>
+                      <p className="text-gray-500">Amplifying community strength and Australian brand identity</p>
+                    </div>
+                  </div>
+
+                  {/* Priority Alert */}
+                  <div className="bg-gradient-to-r from-teal-50 to-green-50 rounded-xl p-6 border border-teal-200 mb-8">
+                    <h3 className="text-lg font-bold text-teal-800 mb-2">🎯 Top Priority: Amplify Your Word-of-Mouth Superpower</h3>
+                    <p className="text-gray-700">Australia already has <strong>23.8% word-of-mouth</strong> (2.4x the US rate) WITHOUT a formal program. Your organic strategy should systematize and amplify this existing strength through a referral program and community-first content approach.</p>
+                  </div>
+
+                  {/* Content Pillars */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">📚 Content Pillars (Priority Order for AU)</h3>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-xl p-5 border-2 border-green-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-green-600 text-white px-2 py-1 rounded text-xs font-bold">#1</span>
+                        <h4 className="font-bold text-green-800">🇦🇺 Australian Made & Owned</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">346 customers cited "Supporting AU Business" as a purchase driver - the 5th highest motivation. This doesn't exist in the US. LEAN INTO IT.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• "Proudly Australian" branding in all content</li>
+                        <li>• Australian team member features</li>
+                        <li>• Local supplier partnerships highlighted</li>
+                        <li>• Australian dog breed content (Kelpie, Aussie Shepherd)</li>
+                        <li>• Aussie slang and humor in captions</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-5 border-2 border-purple-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-purple-600 text-white px-2 py-1 rounded text-xs font-bold">#2</span>
+                        <h4 className="font-bold text-purple-800">👥 Community & Customer Stories</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">24% of customers came from word-of-mouth. Your community IS your marketing. Feature them relentlessly.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Daily customer features and reposts</li>
+                        <li>• "Barney Bed Family" community identity</li>
+                        <li>• User-generated content campaigns</li>
+                        <li>• Customer milestone celebrations</li>
+                        <li>• Multi-dog household features</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-5 border-2 border-blue-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold">#3</span>
+                        <h4 className="font-bold text-blue-800">🏆 Quality & Craftsmanship</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">1,104 customers (highest motivation) cited Quality. Show, don't tell.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Manufacturing process videos</li>
+                        <li>• Material quality deep-dives</li>
+                        <li>• Durability and longevity stories</li>
+                        <li>• Comparison to cheap alternatives</li>
+                      </ul>
+                    </div>
+                    <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-5 border-2 border-amber-300">
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="bg-amber-600 text-white px-2 py-1 rounded text-xs font-bold">#4</span>
+                        <h4 className="font-bold text-amber-800">🐕 Dog Health & Wellness</h4>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-3">786 mentioned orthopedic support. Education builds trust over the long consideration cycle.</p>
+                      <ul className="text-sm space-y-1">
+                        <li>• Senior dog care content</li>
+                        <li>• Joint health education</li>
+                        <li>• Vet partnerships and endorsements</li>
+                        <li>• Success stories (improved mobility)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Platform Strategy */}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">📱 Platform-Specific Strategy (AU Market)</h3>
+
+                  {/* Facebook - More Important in AU */}
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border-2 border-blue-300 mb-6">
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold">PRIORITY</span>
+                      <h4 className="font-bold text-blue-800 text-lg">👥 Facebook (16% acquisition - 2x US effectiveness)</h4>
+                    </div>
+                    <p className="text-gray-600 mb-4">Unlike the US where Instagram dominates, Facebook is a major channel in Australia. Invest heavily in organic Facebook presence.</p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Posting Cadence</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• <strong>Feed Posts:</strong> 4-5x per week</li>
+                          <li>• <strong>Stories:</strong> Daily</li>
+                          <li>• <strong>Group Posts:</strong> 2-3x per week</li>
+                          <li>• <strong>Lives:</strong> 2x per month</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Content That Works on FB</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Longer-form stories (FB audiences read more)</li>
+                          <li>• Customer testimonial videos</li>
+                          <li>• Before/after transformations</li>
+                          <li>• Community polls and questions</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Facebook Group Strategy</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• Create "Barney Bed Australia Family" group</li>
+                          <li>• Exclusive content for members</li>
+                          <li>• Early access to new covers</li>
+                          <li>• Community photo challenges</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="mt-4 bg-white rounded-lg p-4 border border-blue-200">
+                      <h5 className="font-semibold text-blue-700 mb-2">📝 Facebook Post Examples</h5>
+                      <div className="grid md:grid-cols-2 gap-3 text-sm">
+                        <div className="bg-blue-50 rounded p-2">
+                          <p className="font-medium text-blue-700">Community Story Post:</p>
+                          <p className="text-gray-600 italic">"Meet Buster from Sydney! 🐕 His mum Sarah told us: 'After 3 years of trying other beds, Buster finally sleeps through the night on his Barney Bed.' This is why we do what we do. Thanks for sharing Sarah! 💙"</p>
+                        </div>
+                        <div className="bg-blue-50 rounded p-2">
+                          <p className="font-medium text-blue-700">Aussie Pride Post:</p>
+                          <p className="text-gray-600 italic">"Another batch heading out to Aussie pups today! 📦 Every Barney Bed is designed and made right here in Australia. Supporting local never felt so good (or so comfy). 🇦🇺"</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Instagram */}
+                  <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-xl p-6 border border-pink-200 mb-6">
+                    <h4 className="font-bold text-pink-800 text-lg mb-4">📸 Instagram (26% acquisition - community focus)</h4>
+                    <div className="grid md:grid-cols-3 gap-6">
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Posting Cadence</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• <strong>Feed Posts:</strong> 5-7x per week</li>
+                          <li>• <strong>Stories:</strong> 8-12 per day</li>
+                          <li>• <strong>Reels:</strong> 3-4x per week</li>
+                          <li>• <strong>Lives:</strong> 1-2x per month</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">Content Mix</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• 50% Customer UGC (higher than US)</li>
+                          <li>• 20% Australian-made messaging</li>
+                          <li>• 20% Product/education</li>
+                          <li>• 10% Team/behind-the-scenes</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-gray-800 mb-2">AU-Specific Hashtags</h5>
+                        <ul className="text-sm space-y-1">
+                          <li>• #BarneyBedAustralia</li>
+                          <li>• #AussieDogs</li>
+                          <li>• #DogsOfAustralia</li>
+                          <li>• #AustralianMade</li>
+                          <li>• #SupportAustralian</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Referral Program */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">🎁 Referral Program Strategy (Amplify Your Superpower)</h3>
+                    <div className="bg-gradient-to-r from-green-50 to-teal-50 rounded-xl p-6 border-2 border-green-300">
+                      <p className="text-gray-700 mb-4"><strong>The Opportunity:</strong> You already have 24% word-of-mouth WITHOUT a formal program. A structured referral program could push this to <strong>30%+</strong> and create an army of brand ambassadors.</p>
+
+                      <div className="grid md:grid-cols-3 gap-6">
+                        <div>
+                          <h5 className="font-bold text-green-800 mb-2">💰 Recommended Structure</h5>
+                          <ul className="text-sm space-y-1">
+                            <li>• <strong>Give $30 AUD, Get $30 AUD</strong></li>
+                            <li>• Double rewards for repeat customers (49% of your base!)</li>
+                            <li>• "Barney Ambassador" tier for 5+ referrals</li>
+                            <li>• Free cover for 10+ referrals</li>
+                            <li>• VIP early access to new products</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h5 className="font-bold text-green-800 mb-2">🎯 Ambassador Program</h5>
+                          <ul className="text-sm space-y-1">
+                            <li>• Create "Barney Ambassadors" program</li>
+                            <li>• Recruit from top referrers and repeat customers</li>
+                            <li>• Exclusive ambassador Facebook group</li>
+                            <li>• First access to new covers</li>
+                            <li>• Featured on social media quarterly</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <h5 className="font-bold text-green-800 mb-2">📊 Target Metrics</h5>
+                          <ul className="text-sm space-y-1">
+                            <li>• WOM: 24% → 30% (6 months)</li>
+                            <li>• WOM: 30% → 35% (12 months)</li>
+                            <li>• 30% of customers share referral link</li>
+                            <li>• 8% referral conversion rate</li>
+                            <li>• 500+ Barney Ambassadors in year 1</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Long Nurture Email Strategy */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">📧 Long-Nurture Email Strategy (Critical for AU)</h3>
+                    <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200">
+                      <p className="text-gray-700 mb-4"><strong>Critical Insight:</strong> 50% of AU customers take 3+ months to purchase, and 30% take over a year. Your email strategy must be marathon, not sprint.</p>
+
+                      <div className="overflow-x-auto mb-4">
+                        <table className="min-w-full text-sm">
+                          <thead>
+                            <tr className="border-b border-amber-300">
+                              <th className="px-3 py-2 text-left font-bold text-amber-800">Timeframe</th>
+                              <th className="px-3 py-2 text-left font-bold text-amber-800">Email Focus</th>
+                              <th className="px-3 py-2 text-left font-bold text-amber-800">Example Subject Lines</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr className="border-b">
+                              <td className="px-3 py-2 font-medium">Week 1-2</td>
+                              <td className="px-3 py-2">Welcome + Brand Story</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"G'day! Meet the Aussie team behind Barney Bed"</td>
+                            </tr>
+                            <tr className="border-b bg-amber-50">
+                              <td className="px-3 py-2 font-medium">Week 3-4</td>
+                              <td className="px-3 py-2">Quality & Craftsmanship</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"Why 1,104 Aussies said 'quality' made them choose us"</td>
+                            </tr>
+                            <tr className="border-b">
+                              <td className="px-3 py-2 font-medium">Week 5-8</td>
+                              <td className="px-3 py-2">Customer Stories</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"How Milo from Melbourne finally got a good night's sleep"</td>
+                            </tr>
+                            <tr className="border-b bg-amber-50">
+                              <td className="px-3 py-2 font-medium">Week 9-12</td>
+                              <td className="px-3 py-2">Orthopedic Education</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"Is your dog showing these 3 signs of joint discomfort?"</td>
+                            </tr>
+                            <tr className="border-b">
+                              <td className="px-3 py-2 font-medium">Month 3-6</td>
+                              <td className="px-3 py-2">Cover Showcase + Lifestyle</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"New covers just dropped + what Aussie homes are loving"</td>
+                            </tr>
+                            <tr className="border-b bg-amber-50">
+                              <td className="px-3 py-2 font-medium">Month 6-12</td>
+                              <td className="px-3 py-2">Gentle Reminders + Offers</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"Still thinking? Here's 10% off for being patient 🐕"</td>
+                            </tr>
+                            <tr>
+                              <td className="px-3 py-2 font-medium">Month 12+</td>
+                              <td className="px-3 py-2">Re-engagement</td>
+                              <td className="px-3 py-2 text-gray-600 italic">"It's been a while! We've made some improvements..."</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="bg-white rounded-lg p-4 border border-amber-200">
+                        <p className="text-sm text-gray-700"><strong>Key Principle:</strong> Don't be pushy. Australian customers need to feel like they discovered you and made the decision on their own. Provide value, build trust, and let them come to you when they're ready.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Community Building */}
+                  <div className="mb-8">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">👥 Community Building Initiatives (AU-Specific)</h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="bg-green-50 rounded-xl p-5 border border-green-200">
+                        <h5 className="font-bold text-green-800 mb-3">🐕 "Barney Bed Family" Community</h5>
+                        <ul className="text-sm space-y-2">
+                          <li><strong>Facebook Group:</strong> Create exclusive "Barney Bed Australia Family" group</li>
+                          <li><strong>Monthly Challenges:</strong> "Best nap photo", "Cutest cover styling", etc.</li>
+                          <li><strong>Member Perks:</strong> Early access, exclusive discounts, first look at new products</li>
+                          <li><strong>Milestone Celebrations:</strong> Celebrate customer anniversaries publicly</li>
+                        </ul>
+                      </div>
+                      <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
+                        <h5 className="font-bold text-blue-800 mb-3">🤝 Local Partnerships</h5>
+                        <ul className="text-sm space-y-2">
+                          <li><strong>Vet Clinics:</strong> Partner with orthopaedic/senior care specialists</li>
+                          <li><strong>Dog Groomers:</strong> Display cards, referral commissions</li>
+                          <li><strong>Pet Stores (1% channel):</strong> Explore consignment in premium boutiques</li>
+                          <li><strong>Rescues:</strong> Donate beds, create "rescue discounts"</li>
+                        </ul>
+                      </div>
+                      <div className="bg-purple-50 rounded-xl p-5 border border-purple-200">
+                        <h5 className="font-bold text-purple-800 mb-3">📍 Local Events (NSW, VIC, QLD)</h5>
+                        <ul className="text-sm space-y-2">
+                          <li><strong>Sydney:</strong> Dog park pop-ups in Centennial Park, Eastern Suburbs</li>
+                          <li><strong>Melbourne:</strong> Farmers market presence, dog-friendly cafes</li>
+                          <li><strong>Brisbane:</strong> South Bank events, outdoor dog communities</li>
+                          <li><strong>All:</strong> Major pet expos, adoption day sponsorships</li>
+                        </ul>
+                      </div>
+                      <div className="bg-amber-50 rounded-xl p-5 border border-amber-200">
+                        <h5 className="font-bold text-amber-800 mb-3">🏪 Retail Presence (1% → 3%)</h5>
+                        <ul className="text-sm space-y-2">
+                          <li><strong>Target Stores:</strong> Premium pet boutiques, not big box</li>
+                          <li><strong>Display Model:</strong> Showroom style, QR code to purchase online</li>
+                          <li><strong>Start Small:</strong> 3-5 stores in Sydney/Melbourne</li>
+                          <li><strong>Track Everything:</strong> Unique store codes for attribution</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content Calendar */}
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-xl font-bold text-gray-800 mb-4">📅 Weekly Content Calendar Template (AU)</h3>
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full text-sm">
+                        <thead>
+                          <tr className="border-b border-gray-300">
+                            <th className="px-3 py-2 text-left font-bold">Day</th>
+                            <th className="px-3 py-2 text-left font-bold">Instagram</th>
+                            <th className="px-3 py-2 text-left font-bold">Facebook</th>
+                            <th className="px-3 py-2 text-left font-bold">Theme</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b">
+                            <td className="px-3 py-2 font-medium">Monday</td>
+                            <td className="px-3 py-2">Customer UGC feature</td>
+                            <td className="px-3 py-2">Week ahead + community question</td>
+                            <td className="px-3 py-2 text-gray-500">Community</td>
+                          </tr>
+                          <tr className="border-b bg-gray-100">
+                            <td className="px-3 py-2 font-medium">Tuesday</td>
+                            <td className="px-3 py-2">Product/cover feature</td>
+                            <td className="px-3 py-2">Customer testimonial video</td>
+                            <td className="px-3 py-2 text-gray-500">Product</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-3 py-2 font-medium">Wednesday</td>
+                            <td className="px-3 py-2">Educational Reel</td>
+                            <td className="px-3 py-2">Blog/educational post</td>
+                            <td className="px-3 py-2 text-gray-500">Education</td>
+                          </tr>
+                          <tr className="border-b bg-gray-100">
+                            <td className="px-3 py-2 font-medium">Thursday</td>
+                            <td className="px-3 py-2">Australian-made content</td>
+                            <td className="px-3 py-2">Behind-the-scenes, team</td>
+                            <td className="px-3 py-2 text-gray-500">Aussie Pride</td>
+                          </tr>
+                          <tr className="border-b">
+                            <td className="px-3 py-2 font-medium">Friday</td>
+                            <td className="px-3 py-2">Customer story Reel</td>
+                            <td className="px-3 py-2">Weekend vibes, cute dogs</td>
+                            <td className="px-3 py-2 text-gray-500">Community</td>
+                          </tr>
+                          <tr className="border-b bg-gray-100">
+                            <td className="px-3 py-2 font-medium">Saturday</td>
+                            <td className="px-3 py-2">UGC carousel</td>
+                            <td className="px-3 py-2">Community photos roundup</td>
+                            <td className="px-3 py-2 text-gray-500">UGC</td>
+                          </tr>
+                          <tr>
+                            <td className="px-3 py-2 font-medium">Sunday</td>
+                            <td className="px-3 py-2">Lifestyle/relaxation</td>
+                            <td className="px-3 py-2">FB Group exclusive content</td>
+                            <td className="px-3 py-2 text-gray-500">Lifestyle</td>
                           </tr>
                         </tbody>
                       </table>
